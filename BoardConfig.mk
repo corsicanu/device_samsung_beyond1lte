@@ -72,6 +72,28 @@ TW_EXCLUDE_TWRPAPP := true
 PLATFORM_VERSION := 10
 PLATFORM_SECURITY_PATCH := 2020-04-01
 
+# SHRP flags
+SHRP_PATH := device/samsung/beyond1lte
+SHRP_MAINTAINER := corsicanu
+SHRP_DEVICE_CODE := beyond1lte
+SHRP_EDL_MODE := 0
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_CUSTOM_FLASHLIGHT := true
+SHRP_FONP_1 := /sys/devices/virtual/camera/flash/rear_flash
+SHRP_FONP_2 := 
+SHRP_FONP_3 := 
+SHRP_FLASH_MAX_BRIGHTNESS := 1
+SHRP_REC := /dev/block/platform/13d60000.ufs/by-name/recovery
+SHRP_AB := false
+SHRP_REC_TYPE := SAR
+SHRP_DEVICE_TYPE := A_Only
+SHRP_STATUSBAR_RIGHT_PADDING := 40
+SHRP_STATUSBAR_LEFT_PADDING := 40
+SHRP_EXPRESS := true
+
 # Include
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/beyond1lte/include
 
