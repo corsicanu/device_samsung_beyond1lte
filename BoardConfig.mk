@@ -35,9 +35,9 @@ TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CLANG_VERSION := $(shell ls -d prebuilts/clang/host/linux-x86/clang-* | egrep -v 'clang-stable' | xargs -n1 basename | tail -1 | cut -d "-" -f2-)
 TARGET_KERNEL_CLANG_PATH := prebuilts/clang/host/linux-x86/clang-$(TARGET_KERNEL_CLANG_VERSION)
 TARGET_KERNEL_SOURCE := kernel/samsung/universal9820
-TARGET_KERNEL_CONFIG := exynos9820-beyond2lte_defconfig
+TARGET_KERNEL_CONFIG := exynos9820-beyond1lte_defconfig
 BOARD_INCLUDE_RECOVERY_DTBO := true
-BOARD_PREBUILT_DTBOIMAGE := device/samsung/beyond2lte/prebuilt/dtbo.img
+BOARD_PREBUILT_DTBOIMAGE := device/samsung/beyond1lte/prebuilt/dtbo.img
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --header_version 1
 
 # File systems
@@ -73,5 +73,5 @@ PLATFORM_VERSION := 10
 PLATFORM_SECURITY_PATCH := 2020-04-01
 
 # Include
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/beyond2lte/include
+TARGET_SPECIFIC_HEADER_PATH := device/samsung/beyond1lte/include
 
