@@ -69,7 +69,7 @@ TW_EXCLUDE_TWRPAPP := true
 
 # Release related flags
 PLATFORM_VERSION := 10
-PLATFORM_SECURITY_PATCH := 2020-04-01
+PLATFORM_SECURITY_PATCH := 2020-05-01
 
 # SHRP flags
 SHRP_PATH := device/samsung/beyond1lte
